@@ -1,0 +1,16 @@
+name = "envelop-cloudflare"
+type = "javascript"
+zone_id = ""
+account_id = "xxx"
+route = ""
+workers_dev = true
+compatibility_date = "2021-10-26"
+
+[vars]
+SHOPIFY_STORE = "xxx.myshopify.com"
+STOREFRONT_API_VERSION = "2022-01"
+
+[build]
+command = "yarn install && yarn run build"
+[build.upload]
+format = "service-worker"
